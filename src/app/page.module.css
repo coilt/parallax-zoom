@@ -1,21 +1,18 @@
-.main{
+.main {
   margin-top: 0;
   margin-bottom: 100vh;
 }
 
- .heroimage{
+.heroimage {
   width: auto;
   height: 1920px;
-  background-color: aqua;
+  background-color: rgb(4, 4, 4);
 }
-
-
 
 .gallerycontinue {
   height: 200vh;
-  background-color: antiquewhite;
+  background-color: rgb(3, 3, 3);
 }
-
 
 .heroheader {
   position: absolute;
@@ -25,23 +22,69 @@
   z-index: 100;
 }
 
- 
-
-
-
 .heroimage {
   z-index: -100;
 }
 
-
 .imageOverlayContainer {
-  position: relative;  
-  width: 100%;  
-  height: 100%;  
-
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
+.wrapper {
+  height: 1000px;
+}
 
 .spacer {
   height: 200px;
+  position: relative;
+  top: 0px;
+}
+
+.spacertext {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageOverlayContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.heroText {
+  line-height: 80%;
+  color: white; /* Or any color that stands out over your image */
+  text-align: center; /* Center the text */
+  text-align: left;
+  top: 20%;
+  left: 10%;
+  position: absolute;
+  z-index: 100;
+  mix-blend-mode: overlay;
+  font-family: 'Toroka', sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 8rem;
+}
+
+.heroLead {
+  font-size: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: white; /* Or any color that stands out over your image */
+  text-align: center; /* Center the text */
+  text-align: left;
+  top: 40%;
+  left: 10%;
+  position: absolute;
+  z-index: 100;
+  font-weight: light;
+  color: rgb(222, 222, 222);
+}
+
+.paragraphLead {
+  width: 40vw;
 }
