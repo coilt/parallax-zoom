@@ -8,8 +8,14 @@ export default function Index() {
     <div className={styles.container}>
       <div className={styles.sticky}>
         <div className={styles.el}>
-          <div className={styles.imageContainer}>
-            <Image src={Picture1} fill alt='image' placeholder='blur' />
+          <div className={styles.imagecontainer}>
+        <Image 
+            src={Picture1} 
+            fill='true' 
+            alt='image' 
+            placeholder='blur' 
+            
+        />
           </div>
         </div>
       </div>
