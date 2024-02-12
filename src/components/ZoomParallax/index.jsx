@@ -43,7 +43,7 @@ const scale11 = useTransform(scrollYProgress, [0, 1], [1, 11]);
 const pictures = [
   {
     src: Picture14,
-    scale: scale4
+    scale: scale5
   },
   {
     src: Picture2,
@@ -56,7 +56,7 @@ const pictures = [
   },
   {
     src: Picture5,
-    scale: scale4
+    scale: scale6
   },
   {
     src: Picture6,
@@ -68,7 +68,7 @@ const pictures = [
   },
   {
     src: Picture8,
-    scale: scale4
+    scale: scale6
   },
 
   

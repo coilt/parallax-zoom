@@ -3,8 +3,45 @@
   margin-bottom: 100vh;
 }
 
-.spacer{
+ .heroimage{
   width: auto;
-  height: 800px;
+  height: 1920px;
   background-color: aqua;
+}
+
+
+
+.gallerycontinue {
+  height: 200vh;
+  background-color: antiquewhite;
+}
+
+
+.heroheader {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+ 
+
+
+
+.heroimage {
+  z-index: -100;
+}
+
+
+.imageOverlayContainer {
+  position: relative;  
+  width: 100%;  
+  height: 100%;  
+
+}
+
+
+.spacer {
+  height: 200px;
 }

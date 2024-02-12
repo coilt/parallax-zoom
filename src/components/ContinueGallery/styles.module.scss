@@ -1,0 +1,20 @@
+// styles.module.scss
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Center images vertically
+  gap: 20px; // Space between images
+}
+
+.imagecontainer {
+  width: 100%; // Adjust based on your preference
+  max-width: 500px; // Example max-width, adjust as necessary
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
