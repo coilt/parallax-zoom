@@ -7,6 +7,7 @@
     top: 0px;
     height: 100vh;
     background-color: orange;
+    overflow: hidden;
   }
 
   .el {
@@ -28,9 +29,70 @@
 
       img {
         object-fit: cover;
-        height: 100vh;
-        width: 100vw;
+        
       }
+
+    }
+    &:nth-of-type(2){
+        .imagecontainer{
+            top: -30vh;
+            left: 5vw;
+            width: 35vw;
+            height: 30vh;
+        }
+    }
+    &:nth-of-type(3){
+        .imagecontainer{
+            top: -10vh;
+            left: -25vw;
+            width: 20vw;
+            height: 45vh;
+        }
+    }
+    &:nth-of-type(4){
+        .imagecontainer{
+            left: 27.5vw;
+            width: 25vw;
+            height: 25vh;
+        }
+    }
+    &:nth-of-type(5){
+        .imagecontainer{
+            top: 27.5vh;
+            left: 5vw;
+            width: 20vw;
+            height: 25vh;
+        }
+    }
+    &:nth-of-type(6){
+        .imagecontainer{
+            top: 27.5vh;
+            left: -22.5vw;
+            width: 30vw;
+            height: 25vh;
+        }
+    }
+    &:nth-of-type(7){
+        .imagecontainer{
+            top: 22.5vh;
+            left: 25vw;
+            width: 15vw;
+            height: 15vh;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
   }
 }
