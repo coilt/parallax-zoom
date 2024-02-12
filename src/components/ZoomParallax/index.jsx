@@ -19,6 +19,9 @@ import Picture11 from '../../../public/images/011.jpg';
 import Picture12 from '../../../public/images/012.jpg';
 import Picture13 from '../../../public/images/013.jpg';
 import Picture14 from '../../../public/images/014.jpg';
+import Picture15 from '../../../public/images/015.jpg';
+
+
 
  
 
@@ -38,6 +41,8 @@ const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8]);
 const scale9 = useTransform(scrollYProgress, [0, 1], [1, 9]);
 const scale10 = useTransform(scrollYProgress, [0, 1], [1, 10]);
 const scale11 = useTransform(scrollYProgress, [0, 1], [1, 11]);
+ 
+
  
 
 const pictures = [
@@ -62,7 +67,8 @@ const pictures = [
     src: Picture6,
     scale: scale5
   },
-  {
+
+    {
     src: Picture7,
     scale: scale8
   },
@@ -70,6 +76,12 @@ const pictures = [
     src: Picture8,
     scale: scale6
   },
+
+
+  
+
+  
+
 
   
 ]

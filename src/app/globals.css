@@ -5,14 +5,10 @@ body{
   margin-bottom: 0;
 }
 
-
-
 .herofont {
   font-family: 'Toroka';
   src: url('../../public/fonts/toroka-wb.otf') format('otf'); 
 }
-
-
 
 @font-face { 
   font-family: "Toroka"; 

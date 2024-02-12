@@ -5,7 +5,7 @@
 
 .heroimage {
   width: auto;
-  height: 1920px;
+  height: 1080px;
   background-color: rgb(4, 4, 4);
 }
 
@@ -29,7 +29,7 @@
 .imageOverlayContainer {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 1080px;
 }
 
 .wrapper {
@@ -55,36 +55,55 @@
   height: 100%;
 }
 
-.heroText {
+.heroTitle {
   line-height: 80%;
   color: white; /* Or any color that stands out over your image */
   text-align: center; /* Center the text */
   text-align: left;
-  top: 20%;
-  left: 10%;
+  top: 0;
+  left: 9vw;
   position: absolute;
   z-index: 100;
   mix-blend-mode: overlay;
   font-family: 'Toroka', sans-serif;
   font-weight: bold;
   color: rgb(255, 255, 255);
-  font-size: 8rem;
+  font-size: 12rem;
 }
 
 .heroLead {
-  font-size: 2rem;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
   font-family: 'Inter', sans-serif;
-  color: white; /* Or any color that stands out over your image */
+  font-weight: 100;
+  color: rgba(23, 23, 23, 50); 
   text-align: center; /* Center the text */
   text-align: left;
-  top: 40%;
-  left: 10%;
+  top: 30vh;
+  left: 10vw;
   position: absolute;
   z-index: 100;
-  font-weight: light;
-  color: rgb(222, 222, 222);
+  font-weight: thin;
+  color: rgb(255, 255, 255);
+ 
 }
 
-.paragraphLead {
+
+
+.paragraphIntro {
   width: 40vw;
+  position: absolute;
+  top: -40vh;
+  color: rgba(255, 255, 255, 0.578);
+ }
+
+
+
+
+
+.paragraphLead {
+ width: 40vw;
+ position: absolute;
+ top: 15vh;
 }
+
