@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import TextAnimateIn from './components/animations/text/hero/textanimatein.jsx';
 
-const introText = 'Photographer and cinematograper blah blah.'
+const introText = 'Photographer and cinematograper.'
 
 export default function Home() {
   const { scrollYProgress } = useScroll()
@@ -16,6 +16,8 @@ export default function Home() {
   const heroY = useTransform(scrollYProgress, [0, 1], [0, 1000])
   const spacerY = useTransform(scrollYProgress, [0, 1], [800, -8000])
   const textY = useTransform(scrollYProgress, [0, 1], [1000, -3000]) // Text moves differently
+  const textOpacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
 
   useEffect(() => {
     const lenis = new Lenis()
@@ -38,15 +40,14 @@ export default function Home() {
           Katerina Ernst
         </motion.div>
 
-        <motion.div className={styles.heroLead} style={{ y: textY }}>
-          
-         
-             
-              <TextAnimateIn value={introText}  /> 
+<div className={styles.heroLead}>
+        {/* Apply both y position and opacity to TextAnimateIn via style prop */}
+        <TextAnimateIn value={introText} style={{ opacity: textOpacity }} />
        
-
+        </div>
             
-              
+        <motion.div className={styles.heroLead} style={{ y: textY }}>
+
 
               <p> <span className={styles.paragraphLead}>
               I enjoy helping people discover something in them, they didn't
