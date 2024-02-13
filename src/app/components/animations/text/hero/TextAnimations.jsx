@@ -9,8 +9,8 @@ export const AnimIntro = ({ value }) => {
     offset: ['start 0.9', 'end 0.1'],
   });
 
-  const introY = useTransform(scrollYProgress, [0, 0.5], [-100, -300]);
-  const introOpacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
+  const introY = useTransform(scrollYProgress, [0, 0.5], [-100,  0]);
+  const introOpacity = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
     <motion.p
@@ -31,11 +31,11 @@ export const AnimTitle = ({ value }) => {
   const animTitleEl = useRef(null);
   const { scrollYProgress } = useScroll({
     target: animTitleEl,
-    offset: ['start 0', 'end 1'],
+    offset: ['0 0', '1.33 0'],
   });
 
-  const TitleY = useTransform(scrollYProgress, [0, 0.5], [1500, -600]);
-  const TitleOpacity = useTransform(scrollYProgress, [0.2, 1], [1, 0.2]);
+  const TitleY = useTransform(scrollYProgress, [0, 1], [400, -100]);
+  const TitleOpacity = useTransform(scrollYProgress, [1, 1], [0, 1]);
 
   return (
     <motion.p

@@ -9,6 +9,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 // import TextAnimateIn from './components/animations/text/hero/textanimatein.jsx'
 import  { AnimIntro, AnimTitle, AnimLead } from './components/animations/text/hero/TextAnimations.jsx'
 import SlideInTransition from './components/SlideInTransition.jsx'
+import LensComponent from './components/lenscomponent.jsx'
 
 const introText = 'Photographer and cinematographer.'
 const titleText = 'Katerina Ernst.'
@@ -22,10 +23,7 @@ export default function Home() {
   const { scrollYProgress } = useScroll()
   const heroY = useTransform(scrollYProgress, [0, 1], [0, 1000])
   const textY = useTransform(scrollYProgress, [0, 1], [1000, -3000])
-  const textOpacity = useTransform(scrollYProgress, [0, 1], [0, 1])
-  const introY = useTransform(scrollYProgress, [0, 0.5], [-100, -300]);
-  const introT = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
-  const tileOpacity = useTransform(scrollYProgress, [0, 1], [1, 1])
+ 
 
 
 
@@ -41,11 +39,11 @@ export default function Home() {
   return (
     <SlideInTransition>
     <main className={styles.main}>
-      <AnimTitle value={titleText} className={styles.heroTitle} style={{ y: textY, opacity:tileOpacity }}/>
+      <AnimTitle value={titleText} className={styles.heroTitle}  />
         
       
       <div className={styles.heroLead}>
-        <AnimIntro value={introText} style={{ opacity: introT, y: introY }} />
+        <AnimIntro value={introText}   />
       </div>
       <motion.div className={styles.heroLead} style={{ y: textY }}>
         <p>
