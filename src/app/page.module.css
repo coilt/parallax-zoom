@@ -1,7 +1,6 @@
 .main {
   margin-top: 0;
   margin-bottom: 100vh;
-   
 }
 
 .heroimage {
@@ -23,8 +22,6 @@
   justify-content: center;
   z-index: 100;
 }
-
- 
 
 .imageOverlayContainer {
   position: relative;
@@ -60,7 +57,7 @@
   color: white; /* Or any color that stands out over your image */
   text-align: center; /* Center the text */
   text-align: left;
-  top: 0;
+   
   left: 9vw;
   position: absolute;
   z-index: 100;
@@ -76,7 +73,7 @@
   line-height: 2.2rem;
   font-family: 'Inter', sans-serif;
   font-weight: 100;
-  color: rgba(23, 23, 23, 50); 
+  color: rgba(23, 23, 23, 50);
   text-align: left;
   top: 30vh;
   left: 10vw;
@@ -84,39 +81,27 @@
   z-index: 100;
   font-weight: thin;
   color: rgba(255, 255, 255, 0.578);
- 
 }
-
-
 
 .paragraphIntro {
   width: 40vw;
   position: absolute;
   top: -40vh;
   color: rgba(255, 255, 255, 0.578);
- }
-
-
-
-
-
-.paragraphLead {
- width: 40vw;
- position: absolute;
- top: 15vh;
 }
 
+.paragraphLead {
+  width: 40vw;
+  position: absolute;
+  top: 15vh;
+}
 
 .textAnimateIn {
-
   width: 40vw;
   position: absolute;
   top: 600px;
-   color: rgba(255, 255, 255, 0.578);
-
+  color: rgba(255, 255, 255, 0.578);
 }
-
-
 
 .backplate {
   height: 1300px;
@@ -125,8 +110,15 @@
   position: relative;
 }
 
-
 .gallery {
   z-index: 1;
-  
 }
+
+.animIntro {
+  width: 40vw;
+  position: absolute;
+  top: 600px;
+  color: rgba(255, 255, 255, 0.578);
+}
+
+ 

@@ -5,8 +5,13 @@ const PageTransition = ({ children }) => {
     hidden: { 
       y: 100, 
       opacity: 0, 
-      scale: 0.9,
+      scale: 0.8,
       rotate: 10, // Start slightly rotated
+      transition: { 
+        duration: 1, // Adjusted for a smoother transition
+        ease: [0.25, 1, 0.5, 1], // Custom Bezier curve for easing
+        when: "beforeChildren",
+      },
     },
     visible: { 
       y: 0, 
@@ -15,7 +20,7 @@ const PageTransition = ({ children }) => {
       rotate: 0, // Rotate back to 0 degrees
       transition: { 
         duration: 0.8, // Adjusted for a smoother transition
-        ease: [0.85, 0, 0.15, 1], // Custom Bezier curve for easing
+        ease: [0.25, 1, 0.5, 1], // Custom Bezier curve for easing
         when: "beforeChildren",
       },
     },
