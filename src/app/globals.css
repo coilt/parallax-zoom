@@ -17,4 +17,12 @@ body{
   font-style: normal; 
 } 
   
+@font-face { 
+  font-family: "Toroka"; 
+  src: url('../../public/fonts/toroka-wm.otf'); 
+  font-weight: medium; 
+  font-style: normal; 
+} 
+
+
  

@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import TextAnimateIn from './components/animations/text/hero/textanimatein.jsx'
+import SlideInTransition from './components/SlideInTransition.jsx'
 
 const introText = 'Photographer and cinematographer.'
 
@@ -27,6 +28,7 @@ export default function Home() {
   }, [])
 
   return (
+    <SlideInTransition>
     <main className={styles.main}>
       <motion.div className={styles.heroTitle} style={{ y: textY }}>
         Katerina Ernst
@@ -38,7 +40,7 @@ export default function Home() {
         <p>
           {' '}
           <span className={styles.paragraphLead}>
-            I enjoy helping people discover something in them, they didn't know
+            I enjoy helping people discover something, they didn't know
             they had. Through my hands, through my eyes, through my lens. I
             bring to life the unknowable. The unseeable.
           </span>
@@ -64,5 +66,7 @@ export default function Home() {
         <ContinueGallery />
       </div>
     </main>
+    </SlideInTransition>
+
   )
 }
