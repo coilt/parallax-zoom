@@ -3,6 +3,8 @@ body {
   background-color: rgb(4, 4, 4);
   margin-top: 0;
   margin-bottom: 0;
+   
+   
 }
 
 .herofont {
@@ -24,5 +26,15 @@ body {
   font-style: normal; 
 } 
 
-
  
+
+a {
+  pointer-events: all;
+  color: black;
+  text-decoration: none;
+}
+
+
+canvas {
+  background-color: transparent !important; /* Ensure this is not being overridden */
+}

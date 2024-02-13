@@ -20,7 +20,8 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.70.0",
-    "three": "^0.161.0"
+    "three": "^0.161.0",
+    "troika-three-text": "^0.49.0"
   },
   "devDependencies": {
     "eslint": "^8",

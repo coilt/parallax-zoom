@@ -9,10 +9,14 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 // import TextAnimateIn from './components/animations/text/hero/textanimatein.jsx'
 import  { AnimIntro, AnimTitle, AnimLead } from './components/animations/text/hero/TextAnimations.jsx'
 import SlideInTransition from './components/SlideInTransition.jsx'
-import LensComponent from './components/lenscomponent.jsx'
+ 
+
 
 const introText = 'Photographer and cinematographer.'
 const titleText = 'Katerina Ernst.'
+
+// three and drei
+import dynamic from 'next/dynamic';
 
 
 
@@ -41,7 +45,9 @@ export default function Home() {
     <main className={styles.main}>
       <AnimTitle value={titleText} className={styles.heroTitle}  />
         
-      
+     
+
+
       <div className={styles.heroLead}>
         <AnimIntro value={introText}   />
       </div>
