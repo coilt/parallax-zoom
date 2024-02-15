@@ -3,7 +3,7 @@
 import styles from './styles.module.scss';
 import Image from 'next/image';
 
-import Picture1 from '../../../public/images/001.jpg';
+import Picture1 from 'public/images/001.jpg';
  
 
 export default function SimpleGallery() {

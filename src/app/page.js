@@ -1,19 +1,19 @@
 'use client'
 import styles from './page.module.css'
-import ZoomParallax from '../components/ZoomParallax'
-import ContinueGallery from '../components/ContinueGallery'
+import ZoomParallax from './components/zoomparallax'
+import ContinueGallery from './components/continuegallery/Index'
 import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 // import TextAnimateIn from './components/animations/text/hero/textanimatein.jsx'
 import  { AnimIntro, AnimTitle, AnimLead } from './components/animations/text/hero/TextAnimations.jsx'
-import SlideInTransition from './components/SlideInTransition.jsx'
+import SlideInTransition from './components/animations/SlideInTransition.jsx'
  
 
 
 const introText = 'Photographer and cinematographer.'
-const titleText = 'Katerina Ernst.'
+const titleText = 'Katerina Ernst'
 
 // three and drei
 import dynamic from 'next/dynamic';
@@ -48,10 +48,10 @@ export default function Home() {
      
 
 
-      <div className={styles.heroLead}>
+      <div className={styles.heroIntro }>
         <AnimIntro value={introText}   />
       </div>
-      <motion.div className={styles.heroLead} style={{ y: textY }}>
+      <motion.div className={styles.heroIntro} style={{ y: textY }}>
         <p>
           {' '}
           <span className={styles.paragraphLead}>

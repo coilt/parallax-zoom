@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+  background-color: rgb(4, 4, 4);
+  margin-top: 0;
+  margin-bottom: 0;
+
+   
+}
+
+a {
+  pointer-events: all;
+  color: black;
+  text-decoration: none;
+}
+
+
+canvas {
+  background-color: transparent !important; /* Ensure this is not being overridden */
+}
+
+
+  
+@font-face { 
+  font-family: "Toroka"; 
+  src: url('/public/fonts/toroka-wm.otf'); 
+  font-weight: medium; 
+  font-style: normal; 
+} 
+
+@font-face { 
+  font-family: "Boston"; 
+  src: url('/public/fonts/boston-l.otf') format('otf'); 
+  font-weight: light; 
+  font-style: normal; 
+}

@@ -31,11 +31,11 @@ export const AnimTitle = ({ value }) => {
   const animTitleEl = useRef(null);
   const { scrollYProgress } = useScroll({
     target: animTitleEl,
-    offset: ['0 0', '1.33 0'],
+    offset: ['0px', '200px'],
   });
 
-  const TitleY = useTransform(scrollYProgress, [0, 1], [400, -100]);
-  const TitleOpacity = useTransform(scrollYProgress, [1, 1], [0, 1]);
+  const TitleY = useTransform(scrollYProgress, [0, 0.5, 1], ['100vh', '60vh', '50vh']);
+  const TitleOpacity = useTransform(scrollYProgress, [1, 0.5, 0], [1, 0.5,  0]);
 
   return (
     <motion.p

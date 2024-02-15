@@ -5,7 +5,7 @@ import { Cormorant_Garamond } from "next/font/google";
 
 
 
-import "./globals.css";
+import "./styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] , weight: ["100", "200", "300", "400", "700"] });
 const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });

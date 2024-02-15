@@ -5,21 +5,21 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-import Picture1 from '../../../public/images/001.jpg';
-import Picture2 from '../../../public/images/002.jpg';
-import Picture3 from '../../../public/images/003.jpg';
- import Picture4 from '../../../public/images/004.jpg';
-import Picture5 from '../../../public/images/005.jpg';
-import Picture6 from '../../../public/images/006.jpg';
-import Picture7 from '../../../public/images/007.jpg';
-import Picture8 from '../../../public/images/008.jpg';
-import Picture9 from '../../../public/images/009.jpg';
-import Picture10 from '../../../public/images/010.jpg';
-import Picture11 from '../../../public/images/011.jpg';
-import Picture12 from '../../../public/images/012.jpg';
-import Picture13 from '../../../public/images/013.jpg';
-import Picture14 from '../../../public/images/014.jpg';
-import Picture15 from '../../../public/images/015.jpg';
+import Picture1 from 'public/images/001.jpg';
+import Picture2 from 'public/images/002.jpg';
+import Picture3 from 'public/images/003.jpg';
+ import Picture4 from 'public/images/004.jpg';
+import Picture5 from 'public/images/005.jpg';
+import Picture6 from 'public/images/006.jpg';
+import Picture7 from 'public/images/007.jpg';
+import Picture8 from 'public/images/008.jpg';
+import Picture9 from 'public/images/009.jpg';
+import Picture10 from 'public/images/010.jpg';
+import Picture11 from 'public/images/011.jpg';
+import Picture12 from 'public/images/012.jpg';
+import Picture13 from 'public/images/013.jpg';
+import Picture14 from 'public/images/014.jpg';
+import Picture15 from 'public/images/015.jpg';
 
 
 

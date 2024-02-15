@@ -1,6 +1,7 @@
 .main {
   margin-top: 0;
   margin-bottom: 100vh;
+  
 }
 
 .heroimage {
@@ -33,19 +34,7 @@
   height: 1000px;
 }
 
-.spacer {
-  height: 200px;
-  position: relative;
-  top: 0px;
-}
-
-.spacertext {
-  color: aliceblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+ 
 .imageOverlayContainer {
   position: relative;
   width: 100%;
@@ -57,7 +46,6 @@
   color: white; /* Or any color that stands out over your image */
   text-align: center; /* Center the text */
   text-align: left;
-   
   left: 9vw;
   position: absolute;
   z-index: 100;
@@ -71,7 +59,22 @@
 .heroLead {
   font-size: 1.4rem;
   line-height: 2.2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Boston', sans-serif;
+  color: rgba(23, 23, 23, 50);
+  text-align: left;
+  top: 30vh;
+  left: 10vw;
+  position: absolute;
+  z-index: 100;
+  font-weight: thin;
+  color: rgba(255, 255, 255, 0.578);
+}
+
+
+.heroIntro {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-family: 'Boston', sans-serif;
   font-weight: 100;
   color: rgba(23, 23, 23, 50);
   text-align: left;
@@ -83,17 +86,21 @@
   color: rgba(255, 255, 255, 0.578);
 }
 
+
+
 .paragraphIntro {
   width: 40vw;
   position: absolute;
   top: -40vh;
   color: rgba(255, 255, 255, 0.578);
+  
 }
 
 .paragraphLead {
   width: 40vw;
   position: absolute;
   top: 15vh;
+  
 }
 
 .textAnimateIn {
@@ -101,6 +108,7 @@
   position: absolute;
   top: 600px;
   color: rgba(255, 255, 255, 0.578);
+  
 }
 
 .backplate {
@@ -122,6 +130,11 @@
 }
 
  
+
+
+
+
+
 
 
  
