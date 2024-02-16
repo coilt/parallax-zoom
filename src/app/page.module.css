@@ -1,7 +1,6 @@
 .main {
   margin-top: 0;
   margin-bottom: 100vh;
-  
 }
 
 .heroimage {
@@ -34,7 +33,6 @@
   height: 1000px;
 }
 
- 
 .imageOverlayContainer {
   position: relative;
   width: 100%;
@@ -53,28 +51,24 @@
   font-family: 'Toroka', sans-serif;
   font-weight: medium;
   color: rgb(255, 255, 255);
-  font-size: 12rem;
+  font-size: 12vw;
 }
 
 .heroLead {
   font-size: 1.4rem;
   line-height: 2.2rem;
-  font-family: 'Boston', sans-serif;
   color: rgba(23, 23, 23, 50);
   text-align: left;
   top: 30vh;
   left: 10vw;
   position: absolute;
   z-index: 100;
-  font-weight: thin;
   color: rgba(255, 255, 255, 0.578);
 }
-
 
 .heroIntro {
   font-size: 1.4rem;
   line-height: 2.2rem;
-  font-family: 'Boston', sans-serif;
   font-weight: 100;
   color: rgba(23, 23, 23, 50);
   text-align: left;
@@ -82,25 +76,20 @@
   left: 10vw;
   position: absolute;
   z-index: 100;
-  font-weight: thin;
   color: rgba(255, 255, 255, 0.578);
 }
-
-
 
 .paragraphIntro {
   width: 40vw;
   position: absolute;
   top: -40vh;
   color: rgba(255, 255, 255, 0.578);
-  
 }
 
 .paragraphLead {
   width: 40vw;
   position: absolute;
   top: 15vh;
-  
 }
 
 .textAnimateIn {
@@ -108,7 +97,15 @@
   position: absolute;
   top: 600px;
   color: rgba(255, 255, 255, 0.578);
-  
+  display: flex;
+  flex-wrap: wrap;
+
+  .split {
+    margin-right: 8px;
+    margin-top: 2px;
+    line-height: 1.6;
+  }
+
 }
 
 .backplate {
@@ -128,14 +125,3 @@
   top: 600px;
   color: rgba(255, 255, 255, 0.578);
 }
-
- 
-
-
-
-
-
-
-
- 
-

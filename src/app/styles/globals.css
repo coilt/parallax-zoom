@@ -3,8 +3,9 @@ body {
   background-color: rgb(4, 4, 4);
   margin-top: 0;
   margin-bottom: 0;
+  font-family: Boston;
 
-   
+
 }
 
 a {
@@ -21,15 +22,20 @@ canvas {
 
   
 @font-face { 
-  font-family: "Toroka"; 
-  src: url('/public/fonts/toroka-wm.otf'); 
+  font-family: Toroka; 
+  src: url('/fonts/toroka-wm.otf') format('opentype'); 
   font-weight: medium; 
   font-style: normal; 
+  font-display: swap;
 } 
 
-@font-face { 
-  font-family: "Boston"; 
-  src: url('/public/fonts/boston-l.otf') format('otf'); 
-  font-weight: light; 
-  font-style: normal; 
+@font-face {
+  font-family: Boston;
+  src:
+       url('/fonts/boston-l.otf') format('opentype');    
+  font-weight: light;
+  font-style: normal;
+  font-display: swap;
 }
+
+ 

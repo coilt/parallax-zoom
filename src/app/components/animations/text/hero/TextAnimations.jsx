@@ -6,11 +6,11 @@ export const AnimIntro = ({ value }) => {
   const animIntroEl = useRef(null);
   const { scrollYProgress } = useScroll({
     target: animIntroEl,
-    offset: ['start 0.9', 'end 0.1'],
+    offset: ['start 0.8', 'start 0.25'],
   });
 
-  const introY = useTransform(scrollYProgress, [0, 0.5], [-100,  0]);
-  const introOpacity = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+  const introY = useTransform(scrollYProgress, [0, 0.5], [-100,  100]);
+  const introOpacity = useTransform(scrollYProgress, [0, 0.8], [0, 1]);
 
   return (
     <motion.p

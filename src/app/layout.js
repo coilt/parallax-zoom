@@ -1,11 +1,10 @@
-import dynamic from 'next/dynamic';
-
+import "./styles/globals.css";
 import { Inter } from "next/font/google";
 import { Cormorant_Garamond } from "next/font/google";
 
 
 
-import "./styles/globals.css";
+
 
 const inter = Inter({ subsets: ["latin"] , weight: ["100", "200", "300", "400", "700"] });
 const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
