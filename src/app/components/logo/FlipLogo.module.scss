@@ -26,3 +26,35 @@
 .compactLogo {
   background-size: 25%; /* Adjust the size of the compact logo */
 }
+
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+  .logoContainer {
+    left: 20px; /* Closer to the edge on smaller screens */
+    width: 120px; /* Slightly smaller width */
+    height: 15px; /* Adjust height accordingly */
+  }
+
+  .fullLogo, .compactLogo {
+    background-size: 100%; /* Adjust background size for smaller container */
+  }
+}
+
+/* Adjustments for mobile phones */
+@media (max-width: 480px) {
+  .logoContainer {
+    top: 20px;
+    left: 10px; /* Even closer to the edge on very small screens */
+    width: 100px; /* Smaller width for small screens */
+    height: 15px;
+  }
+
+  .fullLogo{
+    background-size: 100%; /* Further adjust background size for very small screens */
+  }
+
+  .compactLogo {
+    background-size: 25%; /* Further adjust background size for very small screens */
+
+  }
+}
