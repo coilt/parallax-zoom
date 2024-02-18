@@ -46,11 +46,9 @@
  
 .logo {
   position: fixed;
-  left: 40px; /* Adjust as needed for alignment */
-  top: 40px; /* Adjust to match the navbar's top position or as desired */
-  z-index: 1100; /* Ensure it's above the navbar and other elements */
-  max-width: 100px; /* Adjust based on your logo's size */
-  max-height: 50px; /* Adjust based on your logo's size */
+  left: 60px; // Adjust as needed for the margin from the left edge of the viewport
+  top: 52px; // Adjust as needed for the margin from the top of the viewport
+  z-index: 2000; // Ensure the logo is above other content, including the navbar
+  height: 16px; // Or whatever size you prefer for the logo
+  width: auto; // Maintain the aspect ratio of the logo
 }
-
- 

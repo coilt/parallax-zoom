@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import styles from './navbar.module.scss';
 import { SlArrowDown } from "react-icons/sl";
+ import Image from 'next/image';
+import Logo from "../../svgs/logo-full.svg";
+
 
 const Navbar = () => {
   const controls = useAnimation();
@@ -41,18 +44,29 @@ const Navbar = () => {
   };
 
   return (
+
+    <>
+    <Image className={styles.logo}
+      priority
+      src={Logo}
+      alt="Katerina Ernst"
+    /> 
+
     <motion.div
       className={styles.navbar}
       variants={navbarVariants}
       initial="hidden"
       animate={controls}
     >
+      
+      
       <ul className={styles.navList}>
         <li className={styles.navItem}><a className={styles.link} href="/works">Works <SlArrowDown /></a></li>
         <li className={styles.navItem}><a className={styles.link} href="/about">About me</a></li>
         <li className={styles.navItem}><a className={styles.link} href="/contacts">Send request</a></li>
       </ul>
     </motion.div>
+    </>
   );
 };
 
