@@ -1,0 +1,14 @@
+.logoContainer {
+  position: fixed;
+  top: 45px;
+  left: 40px;
+  width: 150px; // Set the desired width
+  height: 20px; // Set the desired height
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; // Ensure the image doesn't overflow its bounds
+}
+
+ 

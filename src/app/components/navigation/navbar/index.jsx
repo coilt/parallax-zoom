@@ -3,7 +3,8 @@ import { motion, useAnimation } from 'framer-motion';
 import styles from './navbar.module.scss';
 import { SlArrowDown } from "react-icons/sl";
  import Image from 'next/image';
-import Logo from "../../svgs/logo-full.svg";
+// import Logo from "../../svgs/logo-full.svg";
+
 
 
 const Navbar = () => {
@@ -46,11 +47,11 @@ const Navbar = () => {
   return (
 
     <>
-    <Image className={styles.logo}
+    {/* <Image className={styles.logo}
       priority
       src={Logo}
       alt="Katerina Ernst"
-    /> 
+    />  */}
 
     <motion.div
       className={styles.navbar}

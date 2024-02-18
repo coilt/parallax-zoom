@@ -11,7 +11,7 @@ import  { AnimIntro, AnimTitle, AnimLead } from './components/animations/text/he
 import SlideInTransition from './components/animations/SlideInTransition.jsx';
 import WordSplit from './components/animations/text/hero/WordSplit.jsx';
 import Navbar from './components/navigation/navbar/Index.jsx'; 
- 
+import FlipLogo from './components/logo/FlipLogo.jsx'; // Adjust the path as necessary
  
 
 
@@ -47,6 +47,8 @@ export default function Home() {
     <SlideInTransition>
      
     <main className={styles.main}>  
+    <div>    <FlipLogo /> </div>
+
     <Navbar />
     
       <AnimTitle value={titleText} className={styles.heroTitle}  />
