@@ -1,57 +1,41 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import FullLogo from '../svgs/logo-full.svg';  
-import CompactLogo from '../svgs/logo-compact.svg';  
-import styles from './FlipLogo.module.scss';  
-import Image from 'next/image';
-import Link from 'next/link';
+import styles from './FlipLogo.module.scss';
 
 const FlipLogo = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Ensuring transitions are properly applied for each state
-  const logoVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
+  // Define variants for fading transitions
+  const fadeVariants = {
+    visible: { opacity: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, transition: { duration: 0.5 } },
   };
-
-  // Define transitions with specific properties for entering and exiting
-  const enterTransition = { duration: 0.5, delay: 0.3 };
-  const exitTransition = { duration: 0.5 };
 
   return (
     <div className={styles.logoContainer}>
-      < Link href="/" passHref >
       <motion.div
-      
-        className={styles.logo}
-        variants={logoVariants}
+        className={`${styles.logo} ${styles.fullLogo}`}
+        variants={fadeVariants}
         initial="hidden"
         animate={!isScrolled ? "visible" : "hidden"}
-        transition={!isScrolled ? enterTransition : exitTransition}
-      >
-        <Image src={FullLogo} alt="Full Logo" layout="fill" objectFit="contain" /> 
-      </motion.div>
-     
+        style={{ backgroundImage: 'url(/logo-full.svg)' }}
+      />
       <motion.div
-        className={styles.logo}
-        variants={logoVariants}
+        className={`${styles.logo} ${styles.compactLogo}`}
+        variants={fadeVariants}
         initial="hidden"
         animate={isScrolled ? "visible" : "hidden"}
-        transition={isScrolled ? enterTransition : exitTransition}
-      >
-        <Image src={CompactLogo} alt="Compact Logo" layout="fill" objectFit="contain" />
-      </motion.div>
-      </Link>
+        style={{ backgroundImage: 'url(/logo-compact.svg)' }}
+      />
     </div>
   );
 };

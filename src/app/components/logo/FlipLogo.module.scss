@@ -1,25 +1,28 @@
 .logoContainer {
   position: fixed;
   top: 45px;
-  left: 40px; // Positions the container itself
-  width: 150px; // Container width
-  height: 20px; // Adjust based on your design needs
-  z-index: 100;
+  left: 40px;
+  width: 150px; /* Container width */
+  height: 20px; /* Adjust based on your design needs */
+  z-index: 1000;
   display: flex;
-  justify-content: flex-start; // Align items to the start of the container
+  justify-content: flex-start;
   align-items: center;
   overflow: hidden;
 }
 
-.fullLogo, .compactLogo {
+.logo {
   position: absolute;
-  width: 100%; // Full width of the container
-  height: 100%; // Full height of the container
-  display: flex;
-  justify-content: flex-start; // Aligns the content to the left
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.fullLogo {
+  background-size: 100%; /* Adjust the size of the full logo */
 }
 
 .compactLogo {
-   left: -53px; // Uncomment and adjust if needed
+  background-size: 25%; /* Adjust the size of the compact logo */
 }
