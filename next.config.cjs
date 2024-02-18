@@ -1,15 +1,31 @@
-// Import withTM from next-transpile-modules
-// const withTM = require('next-transpile-modules')([
-  // Add the packages you want to transpile
- // 'three',
- // '@acme/ui', // Your existing packages
- // 'lodash-es', // Your existing packages
-// ]);
+module.exports = {
+  webpack(config) {
+    // Grab the existing rule that handles SVG imports
+    const fileLoaderRule = config.module.rules.find((rule) =>
+      rule.test?.test?.('.svg'),
+    )
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-  // Your existing Next.js configuration options
+    config.module.rules.push(
+      // Reapply the existing rule, but only for svg imports ending in ?url
+      {
+        ...fileLoaderRule,
+        test: /\.svg$/i,
+        resourceQuery: /url/, // *.svg?url
+      },
+      // Convert all other *.svg imports to React components
+      {
+        test: /\.svg$/i,
+        issuer: fileLoaderRule.issuer,
+        resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] }, // exclude if *.svg?url
+        use: ['@svgr/webpack'],
+      },
+    )
 
+    // Modify the file loader rule to ignore *.svg, since we have it handled now.
+    fileLoaderRule.exclude = /\.svg$/i
 
-// Export the configuration wrapped by withTM
-module.exports = withTM(nextConfig);
+    return config
+  },
+
+  // ...other config
+}

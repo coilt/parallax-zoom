@@ -1,0 +1,56 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(0, 0%, 47%, 0);  
+  z-index: 1000;
+  transform: translateY(0%);
+  transition: transform 0.5s ease-in-out;
+  color: white;  
+ }
+
+.navList {
+  list-style-type: none;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: .06rem;
+  font-size: 0.7rem;
+   
+}
+
+.navItem {
+  margin-right: 20px;
+}
+
+.navItem:last-child {
+  margin-right: 0;
+}
+
+.link, .navItem a {  
+  color: white;  
+  text-decoration: none;  
+}
+
+ .hideInitially {
+  visibility: hidden;  
+}
+
+ 
+.logo {
+  position: fixed;
+  left: 40px; /* Adjust as needed for alignment */
+  top: 40px; /* Adjust to match the navbar's top position or as desired */
+  z-index: 1100; /* Ensure it's above the navbar and other elements */
+  max-width: 100px; /* Adjust based on your logo's size */
+  max-height: 50px; /* Adjust based on your logo's size */
+}
+
+ 

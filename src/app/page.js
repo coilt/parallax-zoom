@@ -1,16 +1,17 @@
-'use client'
-import styles from './page.module.css'
-import ZoomParallax from './components/zoomparallax'
-import ContinueGallery from './components/continuegallery/Index'
-import Lenis from '@studio-freight/lenis'
-import { useEffect } from 'react'
-import Image from 'next/image'
-import { motion, useScroll, useTransform } from 'framer-motion'
-// import TextAnimateIn from './components/animations/text/hero/textanimatein.jsx'
-import  { AnimIntro, AnimTitle, AnimLead } from './components/animations/text/hero/TextAnimations.jsx'
-import SlideInTransition from './components/animations/SlideInTransition.jsx'
-import Split from './components/split.jsx'
-
+'use client';
+import styles from './page.module.css';
+import ZoomParallax from './components/zoomparallax';
+import ContinueGallery from './components/continuegallery/Index';
+import Lenis from '@studio-freight/lenis';
+import { useEffect } from 'react';
+import Image from 'next/image';
+import { motion, useScroll, useTransform } from 'framer-motion';
+// import TextAnimateIn from './components/animations/text/hero/textanimatein.jsx';
+import  { AnimIntro, AnimTitle, AnimLead } from './components/animations/text/hero/TextAnimations.jsx';
+import SlideInTransition from './components/animations/SlideInTransition.jsx';
+import WordSplit from './components/animations/text/hero/WordSplit.jsx';
+import Navbar from './components/navigation/navbar/Index.jsx'; 
+ 
  
 
 
@@ -42,15 +43,19 @@ export default function Home() {
   }, [])
 
   return (
+    
     <SlideInTransition>
-    <main className={styles.main}>
+     
+    <main className={styles.main}>  
+    <Navbar />
+    
       <AnimTitle value={titleText} className={styles.heroTitle}  />
         
      
 
 
       <div className={ styles.heroIntro }> 
-        <Split value={introText} />
+        <WordSplit value={introText} />
       </div>
      
       <div className={styles.heroimage}>

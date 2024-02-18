@@ -104,6 +104,12 @@
     margin-right: 8px;
     margin-top: 2px;
     line-height: 1.6;
+    position: relative;
+
+    .shadow {
+      position: absolute;
+      opacity: 0.1;
+    }
   }
 
 }
@@ -125,3 +131,6 @@
   top: 600px;
   color: rgba(255, 255, 255, 0.578);
 }
+
+
+ 
