@@ -4,6 +4,7 @@ import FullLogo from '../svgs/logo-full.svg';
 import CompactLogo from '../svgs/logo-compact.svg';  
 import styles from './FlipLogo.module.scss';  
 import Image from 'next/image';
+import Link from 'next/link';
 
 const FlipLogo = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,15 +30,18 @@ const FlipLogo = () => {
 
   return (
     <div className={styles.logoContainer}>
+      < Link href="/" passHref >
       <motion.div
+      
         className={styles.logo}
         variants={logoVariants}
         initial="hidden"
         animate={!isScrolled ? "visible" : "hidden"}
         transition={!isScrolled ? enterTransition : exitTransition}
       >
-        <Image src={FullLogo} alt="Full Logo" layout="fill" objectFit="contain" />
+        <Image src={FullLogo} alt="Full Logo" layout="fill" objectFit="contain" /> 
       </motion.div>
+     
       <motion.div
         className={styles.logo}
         variants={logoVariants}
@@ -47,6 +51,7 @@ const FlipLogo = () => {
       >
         <Image src={CompactLogo} alt="Compact Logo" layout="fill" objectFit="contain" />
       </motion.div>
+      </Link>
     </div>
   );
 };
