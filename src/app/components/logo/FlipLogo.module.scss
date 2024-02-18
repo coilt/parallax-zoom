@@ -1,13 +1,25 @@
-// FlipLogo.module.scss
 .logoContainer {
   position: fixed;
   top: 45px;
-  left: 40px;
-  width: 150px;  
-  height: 20px; 
+  left: 40px; // Positions the container itself
+  width: 150px; // Container width
+  height: 20px; // Adjust based on your design needs
   z-index: 10;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; // Align items to the start of the container
   align-items: center;
   overflow: hidden;
+}
+
+.fullLogo, .compactLogo {
+  position: absolute;
+  width: 100%; // Full width of the container
+  height: 100%; // Full height of the container
+  display: flex;
+  justify-content: flex-start; // Aligns the content to the left
+  align-items: center;
+}
+
+.compactLogo {
+   left: -53px; // Uncomment and adjust if needed
 }
